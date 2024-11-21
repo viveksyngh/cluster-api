@@ -238,6 +238,10 @@ storage:
           server {{ . }}
           {{- end }}
 
+          {{- range  .NTP.Pools }}
+          pool {{ . }}
+          {{- end }}
+
           # Warning: Using default NTP settings will leave your NTP
           # server accessible to all hosts on the Internet.
 

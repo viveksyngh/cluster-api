@@ -2807,6 +2807,11 @@ spec:
                                 description: enabled specifies whether NTP should
                                   be enabled
                                 type: boolean
+                              pools:
+                                description: pools specifies which NTP pools to use
+                                items:
+                                  type: string
+                                type: array
                               servers:
                                 description: servers specifies which NTP servers to
                                   use

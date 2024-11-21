@@ -26,6 +26,9 @@ ntp:
   servers:{{ range .Servers }}
     - {{ . }}
   {{- end -}}
+  pools: {{ range .Pools }}
+    - {{ . }}
+  {{- end -}}
 {{- end -}}
 {{- end -}}
 `

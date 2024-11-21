@@ -659,6 +659,10 @@ type NTP struct {
 	// +optional
 	Servers []string `json:"servers,omitempty"`
 
+	// pools specifies which NTP pools to use
+	// +optional
+	Pools []string `json:"pools,omitempty"`
+
 	// enabled specifies whether NTP should be enabled
 	// +optional
 	Enabled *bool `json:"enabled,omitempty"`

@@ -1120,6 +1120,11 @@ func (in *NTP) DeepCopyInto(out *NTP) {
 		*out = make([]string, len(*in))
 		copy(*out, *in)
 	}
+	if in.Pools != nil {
+		in, out := &in.Pools, &out.Pools
+		*out = make([]string, len(*in))
+		copy(*out, *in)
+	}
 	if in.Enabled != nil {
 		in, out := &in.Enabled, &out.Enabled
 		*out = new(bool)
